@@ -8,6 +8,10 @@ body {
     color: #333;
 }
 
+body a {
+    color: #551A8B;
+}
+
 /* Layout */
 .container {
     margin-left: auto;
@@ -53,6 +57,7 @@ body {
 }
 #headDesc i {
     background-color: #fff;
+    color: #551A8B;
     border-radius: 20px;
     text-align: center;
 }
@@ -60,7 +65,7 @@ body {
 #headContents {
     padding-top: 20px;
     /* Start col 11 end col 13 */
-    grid-column: 11 / 13; 
+    grid-column: 11 / span 2; 
     text-align: right;
 }
 
