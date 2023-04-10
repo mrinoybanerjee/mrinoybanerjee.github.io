@@ -31,18 +31,21 @@ body {
 }
 
 #headImage {
-    grid-column: span 6;
+    /* grid-column: span 6; */
+    /* Start col 1 */
+    grid-column: 1;
     text-align: right;
 }
 #headImage img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 90px;
 }
 
 #headDesc {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 20px;
+    /* Auto span 6 columns */
     grid-column: span 6;
 }
 #headDesc a {
@@ -54,6 +57,19 @@ body {
     text-align: center;
 }
 
+#headContents {
+    padding-top: 20px;
+    /* Start col 11 end col 13 */
+    grid-column: 11 / 13; 
+    text-align: right;
+}
+
+#headContents a {
+    text-decoration: none;
+    color: #333;
+    font-size: 17px;
+}
+
 
 @media (max-width: 991px) {
     #headImage {
@@ -62,7 +78,7 @@ body {
     }
     #headDesc {
       grid-column: span 12;
-      padding-top: 20px;
+      padding-top: 10px;
       text-align: center;
     }
 }
@@ -78,7 +94,7 @@ h2 {
     color: #999;
     font-size: 18px;
     padding: 0;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 15px 0;
 }
 @media (min-width: 992px) {
     h2 {
@@ -91,22 +107,6 @@ h2 {
     width: 40px;
     height: 40px;
 }
-/* #demail {
-    margin-top: 10px;
-    color: #555;
-    opacity: 0;
-    transition: opacity 0.7s;
-} */
-/* hr {
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    padding: 0;
-    margin: 20px 0px 20px 0px;
-    border: 0;
-} */
 
 #history {
     padding-top: 20px
@@ -145,7 +145,7 @@ h2 {
     padding-bottom: 0px;
 }
 
-desc p {
+.desc p {
     margin-top: 0px;
     padding-top: 0px;
 }
@@ -230,7 +230,7 @@ desc p {
         padding-bottom: 10px;
     }
 }
-#pet-projects .row {
+#projects .row {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -253,6 +253,12 @@ desc p {
     border-radius: 5px;
     border: 1px solid #999;
 }
+
+#media {
+    padding-bottom: 120px;
+}
+
+
 .pub {
     font-size: 14px;
     border-left: 4px solid #aaa;
@@ -265,11 +271,10 @@ desc p {
 }
 .pub-venue {
     display: inline;
-    color: #090;
 }
 .pub-authors {
     display: block;
-    color: #900;
+    /* color: #900; */
 }
 .tul {
     text-align: center;
