@@ -9,7 +9,7 @@ body {
 }
 
 body a {
-    color: #551A8B;
+    color: #4169e1;
 }
 
 /* Layout */
@@ -57,7 +57,7 @@ body a {
 }
 #headDesc i {
     background-color: #fff;
-    color: #551A8B;
+    color: #4169e1;
     border-radius: 20px;
     text-align: center;
 }
