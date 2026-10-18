@@ -79,3 +79,5 @@ footer { border-top: 1px solid var(--rule); padding: 25px 0 35px; color: var(--m
   .writing a { font-size: 23px; }
   footer { font-size: 10px; padding: 24px 0; }
 }
+
+.intro-copy > .intro-note { max-width: 390px; color: var(--muted); margin-bottom: 16px; }
